@@ -6,7 +6,7 @@ CHIP Mux {
     
     PARTS:
         Not(in=sel, out=s0);
-        And(a=a, b=c0, out=s1);
+        And(a=a, b=s0, out=s1);
         And(a=sel, b=b, out=s2);
         Or(a=s1, b=s2, out=out);
 }
